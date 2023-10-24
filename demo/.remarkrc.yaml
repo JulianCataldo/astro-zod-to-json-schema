@@ -1,0 +1,7 @@
+plugins:
+  - remark-frontmatter
+
+  - - remark-lint-frontmatter-schema
+    - schemas:
+        src/content/blog/_blog.schema.json:
+          - src/content/blog/*.{md,mdx}

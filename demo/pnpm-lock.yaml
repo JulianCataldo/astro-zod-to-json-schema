@@ -17,6 +17,9 @@ dependencies:
   astro:
     specifier: ^3.3.3
     version: 3.3.3
+  astro-zod-to-json-schema:
+    specifier: ^0.0.1
+    version: 0.0.1(zod@3.22.4)
 
 packages:
 
@@ -1006,6 +1009,15 @@ packages:
   /astring@1.8.6:
     resolution: {integrity: sha512-ISvCdHdlTDlH5IpxQJIex7BWBywFWgjJSVdwst+/iQCoEYnyOaQ95+X1JGshuBjGp6nxKUy1jMgE3zPqN7fQdg==}
     hasBin: true
+    dev: false
+
+  /astro-zod-to-json-schema@0.0.1(zod@3.22.4):
+    resolution: {integrity: sha512-9pWsaSRqUFMm/NlGKWY1BxKEuii5VxW+fJvgTGnZKhMPD2QTlzSrcYc7T0nUndLKoErTtqNWT6mfJq4kdlCk3Q==}
+    peerDependencies:
+      zod: '>=3'
+    dependencies:
+      zod: 3.22.4
+      zod-to-json-schema: 3.21.4(zod@3.22.4)
     dev: false
 
   /astro@3.3.3:
@@ -3962,8 +3974,20 @@ packages:
     engines: {node: '>=12.20'}
     dev: false
 
+  /zod-to-json-schema@3.21.4(zod@3.22.4):
+    resolution: {integrity: sha512-fjUZh4nQ1s6HMccgIeE0VP4QG/YRGPmyjO9sAh890aQKPEk3nqbfUXhMFaC+Dr5KvYBm8BCyvfpZf2jY9aGSsw==}
+    peerDependencies:
+      zod: ^3.21.4
+    dependencies:
+      zod: 3.22.4
+    dev: false
+
   /zod@3.21.1:
     resolution: {integrity: sha512-+dTu2m6gmCbO9Ahm4ZBDapx2O6ZY9QSPXst2WXjcznPMwf2YNpn3RevLx4KkZp1OPW/ouFcoBtBzFz/LeY69oA==}
+    dev: false
+
+  /zod@3.22.4:
+    resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
     dev: false
 
   /zwitch@2.0.4:

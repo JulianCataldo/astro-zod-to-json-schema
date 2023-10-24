@@ -1,4 +1,5 @@
 import { defineCollection, z } from 'astro:content';
+import { astroZodCollectionsToJsonSchemas } from 'astro-zod-to-json-schema';
 
 const blog = defineCollection({
 	// Type-check frontmatter using a schema
@@ -13,3 +14,5 @@ const blog = defineCollection({
 });
 
 export const collections = { blog };
+
+await astroZodCollectionsToJsonSchemas(collections);
