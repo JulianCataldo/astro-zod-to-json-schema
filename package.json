@@ -1,0 +1,45 @@
+{
+  "name": "astro-zod-to-json-schema",
+  "version": "0.0.1",
+  "description": "Auto-generate JSON schemas from your Astro's Content Collections Zod schemas.",
+  "keywords": [
+    "astro-component",
+    "withastro",
+    "zod",
+    "codegen",
+    "generator",
+    "linting",
+    "remark",
+    "remark-lint",
+    "validation",
+    "content-collections",
+    "json-schema",
+    "optimization"
+  ],
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "exports": {
+    ".": "./dist/astro-zod-to-json-schema.js"
+  },
+  "files": [
+    "./dist/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "release": "pnpm sort-package-json && npm publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "zod-to-json-schema": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.8",
+    "astro": "^3.3.3",
+    "sort-package-json": "^2.6.0",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "zod": ">=3"
+  }
+}
