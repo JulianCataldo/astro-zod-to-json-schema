@@ -1,7 +1,5 @@
 # Astro Content Collections Zod to JSON Schemas
 
-[![Demo screenshot of frontmatter schema linter 1](./docs/screenshot.png)](https://raw.githubusercontent.com/JulianCataldo/remark-lint-frontmatter-schema/master/docs/screenshot.png)
-
 ## Installation
 
 ```sh
@@ -31,7 +29,7 @@ export const collections = { blog };
 + await astroZodCollectionsToJsonSchemas(collections);
 ```
 
-Everytime you'll change your `/src/content/config.ts` file while using `astro dev`, each collection schemas will be automatically generated, alongside Astro's type-gen.:
+Everytime you edit `/src/content/config.ts` file while using `astro dev`, each collection schemas will be automatically emitted, alongside Astro's own typings generation process:
 
 ```diff
 .
@@ -66,6 +64,8 @@ leverage the immense JSON schemas eco-system (see below).
 ## Use cases
 
 ### Lint / validate your Markdown frontmatter
+
+![Demo screenshot of frontmatter schema linter 1](https://res.cloudinary.com/dzfylx93l/image/upload/v1667090782/eslint-plugin-mdx-1.png)
 
 Install remark + plugins:
 
